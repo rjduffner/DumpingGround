@@ -9,9 +9,10 @@ from sgp4.io import twoline2rv
 line1 = ('1 10674U 78018A   14074.06685253 -.00000059  00000-0 -12180-4 0  9995')
 line2 = ('2 10674  69.3617 277.9244 0166662 289.9030 234.8639 13.43567065769518')
 
-
+#
+# Get satellite data
+#
 satellite = twoline2rv(line1, line2, wgs72)
-print dir(satellite)
 
 # 12:50:19 on 29 June 2000
 # position, velocity = satellite.propagate(2000, 6, 29, 12, 50, 19)
